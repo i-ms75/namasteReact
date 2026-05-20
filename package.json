@@ -1,0 +1,23 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is a react course handsOn",
+  "homepage": "https://github.com/i-ms75/namasteReact#readme",
+  "bugs": {
+    "url": "https://github.com/i-ms75/namasteReact/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-ms75/namasteReact.git"
+  },
+  "license": "ISC",
+  "author": "Manmohan Kuhshwaha",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
