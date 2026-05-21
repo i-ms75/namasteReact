@@ -28,3 +28,6 @@
 - Lazy builds
 - Tree shaking - remove unused code
 - Lazy 
+- Different dev and prod build
+
+# Browserslist
