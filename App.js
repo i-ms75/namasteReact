@@ -5,7 +5,7 @@ const heading= React.createElement(
      {id: "heading"},
       "Namaste React"
     );
-console.log("testing commmit activity");
+console.log("testing commmit activity kk");
 const parent= React.createElement(
     "div",
     {id:"parent"},
