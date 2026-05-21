@@ -31,5 +31,17 @@
 - Different dev and prod build
 
 # Browserslist
+ - last two versions
 
-testing main commit
+ what is the difference between npm and npx command for dev and prod build?
+ why does the script command run with npm but not when exact same command from script pasted directly in the terminal?
+
+
+ ## React.createElement (react element) is not a html content/element, it is an object which upon rendering produces html element.
+
+ ## React DOM
+ React render replaces the content of html file, not append. 
+
+ ## JSX
+ - JSX is not html inside javaScript
+ - It is html like syntax
