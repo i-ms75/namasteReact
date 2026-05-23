@@ -31,5 +31,26 @@
 - Different dev and prod build
 
 # Browserslist
+ - last two versions
 
-testing main commit
+ what is the difference between npm and npx command for dev and prod build?
+ why does the script command run with npm but not when exact same command from script pasted directly in the terminal?
+
+
+ ## React.createElement (react element) is not a html content/element, it is an object which upon rendering produces html element.
+
+ ## React DOM
+ React render replaces the content of html file, not append. 
+
+ ## JSX
+ - JSX is not html inside javaScript
+ - It is html like syntax
+ - Transpiled by parcel before moving to js engine.
+
+ ##  Functional component
+ - Component compisition:
+        - Component compisition is a way in which we can combine multiple react functional components inside a another functional component
+ -  Cross site scripting:
+        - A maliciois API or an attacker being able to execute a javascript code inside our application is called cross site scripting.
+- {}
+    - We can run a javascript code inside a functional component's jsx element by putting the javascript code inside a {} bracket
