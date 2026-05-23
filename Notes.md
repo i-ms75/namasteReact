@@ -45,3 +45,4 @@
  ## JSX
  - JSX is not html inside javaScript
  - It is html like syntax
+ - Transpiled by parcel before moving to js engine.
