@@ -46,3 +46,11 @@
  - JSX is not html inside javaScript
  - It is html like syntax
  - Transpiled by parcel before moving to js engine.
+
+ ##  Functional component
+ - Component compisition:
+        - Component compisition is a way in which we can combine multiple react functional components inside a another functional component
+ -  Cross site scripting:
+        - A maliciois API or an attacker being able to execute a javascript code inside our application is called cross site scripting.
+- {}
+    - We can run a javascript code inside a functional component's jsx element by putting the javascript code inside a {} bracket
