@@ -68,3 +68,6 @@
 - Functional component - it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx.
 
 ## Episode 4 - Talk is cheap show me the code
+ ## Props
+ ## Config driven UI
+ - NOTE: using index as a key for map function is not recommended
