@@ -54,3 +54,20 @@
         - A maliciois API or an attacker being able to execute a javascript code inside our application is called cross site scripting.
 - {}
     - We can run a javascript code inside a functional component's jsx element by putting the javascript code inside a {} bracket
+
+
+
+- JSX - jsx is a syntax extension to js, it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string, it is jsx, it is a syntax extension to js which looks like html but it is not html, it is not string.
+
+
+
+- React Component - it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx.
+
+- Class based component - it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx.
+
+- Functional component - it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx.
+
+## Episode 4 - Talk is cheap show me the code
+ ## Props
+ ## Config driven UI
+ - NOTE: using index as a key for map function is not recommended
