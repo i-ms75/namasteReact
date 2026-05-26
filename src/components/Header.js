@@ -1,3 +1,4 @@
+import { LOGO_URL } from "../utils/constants";
 const Header = () =>
 {
     return (
@@ -5,7 +6,7 @@ const Header = () =>
             <div className="logo-container">
                 <img 
                 className="logo" 
-                src="https://res.cloudinary.com/cloudinary-marketing/images/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1750375701/basspro-case_study-image2/basspro-case_study-image2.png?_i=AA" 
+                src={LOGO_URL}
                 />
             </div>
             <div className="nav-items">
