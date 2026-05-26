@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
+import Body from "./components/Body"
+import Footer from "./components/Footer";
 // import logo from './src/img/logo.jpg';
 
 /*
@@ -2059,42 +2062,9 @@ const restaurants=
                     }
                   }
                 ]
-const Header = () =>
-{
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img 
-                className="logo" 
-                src="https://res.cloudinary.com/cloudinary-marketing/images/c_scale,w_auto,dpr_auto/f_auto,q_auto/v1750375701/basspro-case_study-image2/basspro-case_study-image2.png?_i=AA" 
-                />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
 
-        </div>
-    );
-};
 
-const Footer = () =>
-{
-    return(
-        <div className="footer">
-            <ul>
-                <li>Careers</li>
-                <li>security</li>
-                <li>Lisense</li>
-                <li>location</li>
-            </ul>
-        </div>
-    )
-}
+
 
 const ResturantCard = (props) =>
 {
@@ -2112,25 +2082,7 @@ const ResturantCard = (props) =>
     )
 }
 
-const Body = () =>
-{
-    return(
-        <div className="body">
-            <div className="search"> Search </div> 
-            {/* //Restaurant Card */}
-            <div className="resturant-container">
-                {/* <h2>{console.log("res data from body: "+ restaurants[0].info.name)}</h2> */}
-                {/* <ResturantCard restaurantsData={restaurants[0]}/> */}
-                {
-                    restaurants.map((restaurant)=>
-                    (
-                        <ResturantCard key={restaurant.info.id} restaurantsData={restaurant}/>
-                    ))
-                }
-            </div>
-        </div>
-    )
-}
+
 
 const AppLayout = () => 
 {
