@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Body from "./components/Body"
 import ResturantCard from "./components/RestaurantCard";
 import Footer from "./components/Footer";
-// import logo from './src/img/logo.jpg';
 
 /*
 everything in here is a comment for this application
@@ -24,13 +23,6 @@ Building a swiggy clone with react
 */
 
 
-
-
-
-
-
-
-
 const AppLayout = () => 
 {
     return (
@@ -42,8 +34,6 @@ const AppLayout = () =>
     );
     
 };
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);
