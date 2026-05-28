@@ -69,6 +69,25 @@
   cursor:  pointer;
 }
 
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card{
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #95949413;
+}
+
+.login-btn{
+  cursor: pointer;
+  background-color: #e81717;
+}
+
+.filter{
+  display: flex;
+}
 
 
 /* 1. Define your default colors (Light mode) */

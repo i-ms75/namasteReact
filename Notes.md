@@ -65,7 +65,7 @@
 
 - Class based component - it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx, it is a class which extends React.Component and has a render method which returns jsx.
 
-- Functional component - it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx.
+- Functional component - it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx, it is a function which returns jsx. 
 
 ## Episode 4 - Talk is cheap show me the code
  ## Props
@@ -80,3 +80,11 @@
  Why does react need useStat to re-render upon variable update, why can't it re-render when a normal js variable is used?
  What is react fiber?
  What is virtual dom? why is it important?
+
+ ## Live api
+ -  useEffect
+ - optional chaining
+ - Shimmer ui
+
+ ## Epdisode 6
+ -  Whenever a state variable changes, react triggers reconciliation cycle(re-renders the component )

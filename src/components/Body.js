@@ -1,15 +1,53 @@
-import restaurants from "../utils/restaurants";
+// import restaurants from "../utils/restaurants";
 import ResturantCard from "./RestaurantCard";
-import { useState } from "react";
+import Shimmer from "./Shimmer";
+import { useState, useEffect } from "react";
 const Body = () =>
 {
-    const [filteredRestaurants, setfilteredRestaurants]=useState(restaurants);
-    return(
+    const [filteredRestaurants, setfilteredRestaurants]=useState([]);
+    const [restaurantData, setrestaurantData]=useState([]);
+    const [searchText, setSearchText] = useState("")
+
+    useEffect(()=>
+    {
+        fetchLiveData();
+    },[]);
+
+   const fetchLiveData = async () =>
+    {
+        const restaurantsLlist = await fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        );
+        
+        const data = await restaurantsLlist.json();
+       setfilteredRestaurants(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+       setrestaurantData(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(restaurantData);
+    }
+
+
+    return filteredRestaurants.length===0? <Shimmer/> :(
         <div className="body">
             <div className="filter">
+                <div className="search">
+                <input type="text" className="search-box" value={searchText} onChange={(e) => {setSearchText(e.target.value)}  }/>
+                <button
+                    onClick={() => 
+                        {
+                            const filteredList=restaurantData.filter((res)=>
+                            (
+                                res.info.name.toLowerCase().includes(searchText)
+                                
+                            ));
+                            setfilteredRestaurants(filteredList);
+                        }}
+                >
+                    Search
+                </button>
+                </div>
                 <button className="filterButton" onClick={()=>{
                     const filteredList= filteredRestaurants.filter(
-                        (restaurant)=>restaurant.info.avgRating>4.5);
+                        (restaurant)=>restaurant.info.avgRating>4);
                     setfilteredRestaurants(filteredList);
                 }}>Top Restaurants</button>    
             </div> 
