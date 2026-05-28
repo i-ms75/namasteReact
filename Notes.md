@@ -71,3 +71,12 @@
  ## Props
  ## Config driven UI
  - NOTE: using index as a key for map function is not recommended
+
+ ## React hooks
+ Normal JS utility function
+ - useState()
+ - useEffects()
+
+ Why does react need useStat to re-render upon variable update, why can't it re-render when a normal js variable is used?
+ What is react fiber?
+ What is virtual dom? why is it important?
