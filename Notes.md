@@ -85,3 +85,6 @@
  -  useEffect
  - optional chaining
  - Shimmer ui
+
+ ## Epdisode 6
+ -  Whenever a state variable changes, react triggers reconciliation cycle(re-renders the component )
