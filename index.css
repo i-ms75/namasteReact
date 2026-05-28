@@ -85,6 +85,10 @@
   background-color: #e81717;
 }
 
+.filter{
+  display: flex;
+}
+
 
 /* 1. Define your default colors (Light mode) */
 :root {

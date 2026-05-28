@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 const Body = () =>
 {
     const [filteredRestaurants, setfilteredRestaurants]=useState([]);
+    const [restaurantData, setrestaurantData]=useState([]);
+    const [searchText, setSearchText] = useState("")
 
     useEffect(()=>
     {
@@ -18,15 +20,31 @@ const Body = () =>
         );
         
         const data = await restaurantsLlist.json();
-
-        setfilteredRestaurants(data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-        console.log(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+       setfilteredRestaurants(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+       setrestaurantData(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(restaurantData);
     }
 
 
     return filteredRestaurants.length===0? <Shimmer/> :(
         <div className="body">
             <div className="filter">
+                <div className="search">
+                <input type="text" className="search-box" value={searchText} onChange={(e) => {setSearchText(e.target.value)}  }/>
+                <button
+                    onClick={() => 
+                        {
+                            const filteredList=restaurantData.filter((res)=>
+                            (
+                                res.info.name.toLowerCase().includes(searchText)
+                                
+                            ));
+                            setfilteredRestaurants(filteredList);
+                        }}
+                >
+                    Search
+                </button>
+                </div>
                 <button className="filterButton" onClick={()=>{
                     const filteredList= filteredRestaurants.filter(
                         (restaurant)=>restaurant.info.avgRating>4);
