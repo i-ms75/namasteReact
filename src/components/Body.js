@@ -1,5 +1,6 @@
 // import restaurants from "../utils/restaurants";
 import ResturantCard from "./RestaurantCard";
+import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 const Body = () =>
 {
@@ -22,12 +23,8 @@ const Body = () =>
         console.log(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
     }
 
-    if(filteredRestaurants.length===0)
-    {
 
-        return <h1>just this much is sufficient to display the tag</h1>
-    }
-    return(
+    return filteredRestaurants.length===0? <Shimmer/> :(
         <div className="body">
             <div className="filter">
                 <button className="filterButton" onClick={()=>{
