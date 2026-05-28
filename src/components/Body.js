@@ -1,15 +1,38 @@
-import restaurants from "../utils/restaurants";
+// import restaurants from "../utils/restaurants";
 import ResturantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const Body = () =>
 {
-    const [filteredRestaurants, setfilteredRestaurants]=useState(restaurants);
+    const [filteredRestaurants, setfilteredRestaurants]=useState([]);
+
+    useEffect(()=>
+    {
+        fetchLiveData();
+    },[]);
+
+   const fetchLiveData = async () =>
+    {
+        const restaurantsLlist = await fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.97530&lng=77.59100&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        );
+        
+        const data = await restaurantsLlist.json();
+
+        setfilteredRestaurants(data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        console.log(data?.data?.cards[4]?.card.card?.gridElements?.infoWithStyle?.restaurants);
+    }
+
+    if(filteredRestaurants.length===0)
+    {
+
+        return <h1>just this much is sufficient to display the tag</h1>
+    }
     return(
         <div className="body">
             <div className="filter">
                 <button className="filterButton" onClick={()=>{
                     const filteredList= filteredRestaurants.filter(
-                        (restaurant)=>restaurant.info.avgRating>4.5);
+                        (restaurant)=>restaurant.info.avgRating>4);
                     setfilteredRestaurants(filteredList);
                 }}>Top Restaurants</button>    
             </div> 
