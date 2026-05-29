@@ -4,10 +4,14 @@ import Header from "./components/Header";
 import Body from "./components/Body"
 import ResturantCard from "./components/RestaurantCard";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs";
+import Error from "./components/Error";
+import {createBrowserRouter, RouterProvider} from "react-router";
 
 /*
 everything in here is a comment for this application
-Building a swiggy clone with react
+Building a swiggy clone with react      
 - Heaader
     - Navbar
     - Logo
@@ -35,7 +39,23 @@ const AppLayout = () =>
     
 };
 
+const AppRouter = createBrowserRouter([
+    {
+        path:'/',
+        element: <AppLayout/>,
+        errorElement: <Error/>
+    },
+    {
+        path:'/contact',
+        element:<Contact/>
+    },
+    {
+        path:'/aboutUs',
+        element:<AboutUs/>
+    }
+])
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render( <RouterProvider router={AppRouter}/>);
 
 
