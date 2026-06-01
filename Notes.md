@@ -106,3 +106,9 @@
   
 ## Episode 8
 - How do you pass a props to a class based component?
+- constructor super(props)
+- this.state
+- componentDidMount() : this is loaded once the component is loaded. It is used to make api calls so that the components loads swiftly and the data is fille later.
+       - If there are two children with componentDidMount, both the render is completed first and then only the componentDidMount is called.
+       - This happens so because react batches the lifecycles of children, first all the render phases are batched together and then the commit phase is batched together.
+       - But if javaScript is single threaded interpreted language how does it detects that it has childrens that needs to /can be batched together?
