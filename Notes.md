@@ -98,8 +98,11 @@
  ## Epdisode 6
  -  Whenever a state variable changes, react triggers reconciliation cycle(re-renders the component )
 
- ## Routing
- - useParams
+ ## Episode 7
+ - Routing
  - Outlet - children inside an outlet.
  - CLient side vs server side rendering.
+ - useParams   
   
+## Episode 8
+- How do you pass a props to a class based component?
