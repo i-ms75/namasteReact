@@ -74,8 +74,17 @@
 
  ## React hooks
  Normal JS utility function
- - useState()
- - useEffects()
+ - useState() :
+       - Always create inside the functional component.
+       - Always decleare at the top of the functional component.
+       - Connot be created inside an if else or a loop.
+ - useEffects():
+       - Case 1: Without dependency array:
+              - It is called everytime the component is rendered/re-rendered
+       - Case 2: With an empty dependency array
+              - It is called only once during the initial rendering of the component
+       - Case 3:
+              - It is called only when the items in the dependency array changes
 
  Why does react need useStat to re-render upon variable update, why can't it re-render when a normal js variable is used?
  What is react fiber?
@@ -88,3 +97,9 @@
 
  ## Epdisode 6
  -  Whenever a state variable changes, react triggers reconciliation cycle(re-renders the component )
+
+ ## Routing
+ - useParams
+ - Outlet - children inside an outlet.
+ - CLient side vs server side rendering.
+  
