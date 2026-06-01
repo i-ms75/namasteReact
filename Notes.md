@@ -75,8 +75,9 @@
  ## React hooks
  Normal JS utility function
  - useState() :
-       - Always create inside the functional component
-       - Always decleare at the top of the functional component
+       - Always create inside the functional component.
+       - Always decleare at the top of the functional component.
+       - Connot be created inside an if else or a loop.
  - useEffects():
        - Case 1: Without dependency array:
               - It is called everytime the component is rendered/re-rendered
@@ -98,4 +99,7 @@
  -  Whenever a state variable changes, react triggers reconciliation cycle(re-renders the component )
 
  ## Routing
+ - useParams
+ - Outlet - children inside an outlet.
+ - CLient side vs server side rendering.
   
