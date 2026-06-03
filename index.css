@@ -90,6 +90,13 @@
 }
 
 
+.user-card{
+  padding: 10px;
+  /* display: flex; */
+  margin: 20px;
+  border: 1px solid #f9e402;
+}
+
 /* 1. Define your default colors (Light mode) */
 :root {
   --bg-color: #ffffff;
