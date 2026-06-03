@@ -112,3 +112,8 @@
        - If there are two children with componentDidMount, both the render is completed first and then only the componentDidMount is called.
        - This happens so because react batches the lifecycles of children, first all the render phases are batched together and then the commit phase is batched together.
        - But if javaScript is single threaded interpreted language how does it detects that it has childrens that needs to /can be batched together?
+
+- componentDidUpdate
+- async
+- setInterval
+- Why can't we use in useEffect call back?
