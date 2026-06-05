@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body"
@@ -26,6 +26,8 @@ Building a swiggy clone with react
             - Rating
 - Footer
 */
+
+const Grocery = lazy(()=>import("./components/Grocery"));
 
 
 const AppLayout = () => 
@@ -60,6 +62,12 @@ const AppRouter = createBrowserRouter([
             {
                 path:'/restaurant/:resId',
                 element:<RestaurantMenu/>
+            },
+            {
+                path:'/Grocery',
+                element:<Suspense fallback={<h1>Loading...</h1>}>
+                    <Grocery/>
+                    </Suspense>
             }
 
         ],
