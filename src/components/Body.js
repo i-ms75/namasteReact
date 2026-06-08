@@ -27,11 +27,11 @@ const Body = () =>
 
 
     return filteredRestaurants.length===0? <Shimmer/> :(
-        <div className="body">
+        <div className="bg-white dark:bg-black">
             <div className="filter">
-                <div className="search">
-                <input type="text" className="search-box" value={searchText} onChange={(e) => {setSearchText(e.target.value)}  }/>
-                <button
+                <div className="text-gray-700">
+                <input type="text" className="bg-gray-500 my-4 p-1" value={searchText} onChange={(e) => {setSearchText(e.target.value)}  }/>
+                <button className="px-4"
                     onClick={() => 
                         {
                             const filteredList=restaurantData.filter((res)=>
@@ -45,14 +45,14 @@ const Body = () =>
                     Search
                 </button>
                 </div>
-                <button className="filterButton" onClick={()=>{
+                <button className="text-gray-400" onClick={()=>{
                     const filteredList= filteredRestaurants.filter(
                         (restaurant)=>restaurant.info.avgRating>4);
                     setfilteredRestaurants(filteredList);
                 }}>Top Restaurants</button>    
             </div> 
             {/* //Restaurant Card */}
-            <div className="resturant-container">
+            <div className="text-gray-400 flex">
                 {
                     filteredRestaurants.map((restaurant)=>
                     (
