@@ -4,7 +4,7 @@ const ResturantCard = (props) =>
    const {restaurantsData}=props;
    console.log("resturant data: "+restaurantsData.info.name)
     return (
-        <div className="resturant-card">
+        <div className="px-5">
             <img src={CDN_URL+restaurantsData.info.cloudinaryImageId}/>
             <h3>Restaurant {restaurantsData.info.name}</h3>
             <h4>{restaurantsData.info.cuisines.join(",")}</h4>
